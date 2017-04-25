@@ -16,3 +16,11 @@ df1 = df.replace(np.nan, '', regex=True)
 # or
 df.replace(np.nan, '', regex=True, inplace=True)
 
+'''
+Get list from pandas DataFrame column headers
+'''
+list(df.columns.values)
+# or
+list(df)
+# or
+df.columns.values.tolist()
