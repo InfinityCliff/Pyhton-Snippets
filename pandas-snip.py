@@ -24,3 +24,23 @@ list(df.columns.values)
 list(df)
 # or
 df.columns.values.tolist()
+
+'''
+Get Index from pndas DataFrame as list
+'''
+df.index.tolist()
+
+'''
+Generating a randaom DataFrame
+'''
+df = pd.DataFrame(np.random.randn(6, 4),
+                  index=list(range(0, 12, 2)),
+                  columns=list(range(0, 8, 2)))
+
+'''
+Generate a Dataframe of set size range and width
+'''
+width = 4
+rng = 6
+data = np.array([np.arange(rng)]*width).T
+df2 = pd.DataFrame(data)
